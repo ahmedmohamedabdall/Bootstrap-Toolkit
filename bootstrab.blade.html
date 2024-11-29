@@ -1,0 +1,498 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap cheat sheet</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <!-- Option 1: Include in HTML -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+        <link rel="stylesheet" href="style.css">
+
+        <link rel="stylesheet" href="reset.css">
+
+
+<script src="https://unpkg.com/scrollreveal"></script>
+
+
+
+</head>
+
+<body>
+
+    <!-- bg-black navbar-dark will make the navbar darck and the text white -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-2 fixed-top">
+        <div class="container">
+            <a href="" class="navbar-brand">bootstrap</a>
+            <!--to creat a toggle
+          1- put a button with navbar-toggler class
+        2- put data-bs-toggle = collapse
+        3-create a id in the container div
+        4-target the id data-bs-target=container id
+        5-create a span with class navbar-toggler-icon
+      
+      -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--collapse navbar-collapse put the ul inside it it will
+          make it resonsive
+        put ms-auto to move the links to the right
+      me-3 set margin right-->
+            <div class="collapse navbar-collapse" id="nav-menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item me-3"><a href="#learn about ichigo" class="nav-link">home</a></li>
+                    <li class="nav-item me-3"><a href="#learn about ban" class="nav-link">latest</a></li>
+                    <li class="nav-item me-3"><a href="" class="nav-link">list</a></li>
+                    <li class="nav-item me-3"><a href="" class="nav-link">report</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- a flex box
+      1-bg-dark bakck ground dark
+    2- text-light make the text visiable p5 padding:5
+    text center center text
+  3- d-flex display:flex
+4- to size down the imge add img-fluid w-50 h-50
+w => width h=> height
+
+5- ms-auto  ms set margin start or margin left
+
+6- text-lg-primary make the text in a blue container
+text-primary make the text it self blue -->
+    <section class="bg-dark text-light p-4 text-center text-sm-start pt-lg-4">
+        <div class="container">
+
+            <div class="d-sm-flex align-items-center justify-content-between">
+
+                <div>
+                    <h1>become a <span class="text-primary"> wep devolber</span></h1>
+                    <p class="lead my-4">
+
+                        Why do we use it?
+
+                        It is a long established fact that a reader <br>
+                        i want more time too man but i can't just leave work i know i'm wasting <br>
+                        time but i could't control my self
+
+                    </p>
+                    <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#enroll"> start now</button>
+                </div>
+                <!-- d-none d-sm-block will make the img to display:none in small screen-->
+                <img class="img-fluid w-25 h-25  d-none first-img d-sm-block" src="1601088.jpg" >
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="bg-primary text-light p-4 ">
+        <div class="container">
+            <div class=" d-md-flex align-items-center justify-content-between ">
+                <h2 class="mb-3 mb-md-0 text-center"> start learning now</h2>
+<!--ms for margin left me for margin right-->
+<div class="input-group s-input">
+<input type="text" class="form-control" placeholder="fuck this" >
+<button class="btn btn-dark btn-lg" type="button" id="button-addon2">SEARCH</button>
+</div>
+
+</div>
+</div>
+    </section>
+
+
+
+<section class="p-5">
+        <div class="container ">
+          <!--  g-4 create space between in sm screen-->
+            <div class="row text-center g-4">
+                <div class="col-md">
+                  <!--
+                    1- card used to create a card 
+                  2-card-img-top to put an img top of the card
+                3-card-body to create card content
+                4- <i class= bi bi-icon> to place an icon 
+                  5- card-title to put the title
+                  6 card-text to put a long text in the card 
+              -->
+<div class="card bg-black text-white" style="width: 18rem;">
+  <img src="2 .jpg" class="card-img-top" >
+  <div class="card-body">
+    <div class="h1 mb-3">
+    <i class="bi bi-laptop"></i>
+  </div>
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text"> build on the card title and make up the bulk of the card's content.</p>
+  
+    <a href="#" class="btn btn-primary">start learning</a>
+  </div>
+</div>
+</div>
+
+
+<!--use bi bi-icon_name to make an icon   -->
+
+
+<div class="col-md">
+
+  <div class="card bg-black text-white" style="width: 18rem;">
+
+  <img src="1.jpeg" class="card-img-top" alt="...">
+  <div class="card-body text-center">
+  <div class="h2 mb-3">
+    <i class="bi bi-whatsapp"></i>
+  </div>
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div></div>
+<div class="col-md"><div class="card bg-black text-white" style="width: 18rem; ">
+  <img src="3.jpg" class="card-img-top" alt="...">
+  <div class="card-body text-center">
+  <div class="h2 mb-3">
+    <i class="bi bi-people"></i>
+  </div>    
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">ban</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div></div>
+
+            </div>
+        </div>
+</section>
+
+
+<section class="p-5" id="learn about ichigo">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-md">
+            <img src="1.jpeg" alt="#" class="img-fluid">
+          
+          </div>
+          <div class="col-md p-5">
+  <h1>learn now</h1>
+          <p class="lead">start lesson 1 Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+              Dignissimos porro aut aliquid. Doloremque quaerat itaque saepe repudiandae necessitatibus <br>
+              blanditiis incidunt eos ea repellat, ex consequuntur non placeat maxime quam possimus.</p>
+
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia id eaque architecto <br>
+                  quia ipsa perspiciatis blanditiis, qui et, harum reiciendis quaerat<br>
+                  reprehenderit dicta, voluptates voluptas.<br>
+                  Provident ut facilis veniam sint.</p>      
+                  <a href="" class="btn  mt-3 bg-dark text-light ">let's go <i class="bi-chevron-right"></i></a> 
+              
+          </div>
+        </div>
+      </div>
+</section>
+
+
+
+    <section class="p-5 bg-dark text-light" id="learn about ban">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+
+          <div class="col-md p-5">
+  <h1>learn now</h1>
+          <p class="lead">start lesson 1 Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+              Dignissimos porro aut aliquid. Doloremque quaerat itaque saepe repudiandae necessitatibus <br>
+              blanditiis incidunt eos ea repellat, ex consequuntur non placeat maxime quam possimus.</p>
+
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia id eaque architecto <br>
+                  quia ipsa perspiciatis blanditiis, qui et, harum reiciendis quaerat<br>
+                  reprehenderit dicta, voluptates voluptas.<br>
+                  Provident ut facilis veniam sint.</p>      
+                  <a href="" class="btn  mt-3 bg-white text-dark ">let's go <i class="bi-chevron-right"></i></a> 
+              
+          </div>
+          <div class="col-md">
+            <img src="3.jpg" alt="#" class="img-fluid">
+          
+          </div>          
+        </div>
+      </div>
+    </section>
+
+<!--qustion section-->
+<section class="p-5" id="question">
+  <div class="container">
+    <h2 class="text-center mb-4">your goal</h2>
+    <!--
+      1-accordion-flush
+      create a drop down that contain explnation information 
+      2- it need an id to link the button and the drop down section
+      3-div with class=  accordion-item to put content and header to the accordion 
+      4-inside accordion-item 
+      A-div with class= accordion-header with an id inside it the button
+      B-div with class=  accordion-button linked to the accordion-collapse id 
+      C-div with class=  accordion-collapse with id to link to the button
+      D-div with class= accordion-body inside the accordion-collapse
+      E-repeat just change content and id
+
+
+    -->
+<div class="accordion" id="accordion-1">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+        aria-controls="collapseOne">
+        what you need #1
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="headingOne" data-bs-parent="#accordion-1">
+      <div class="accordion-body">
+        <strong>mony you fool</strong> It is shown by default <br>
+        that you are in need to get money
+      </div>
+    </div>
+  </div>
+
+
+   <div class="accordion-item">
+    <h2 class="accordion-header" >
+      <button class="accordion-button  " type="button" data-bs-toggle="collapse" data-bs-target="#collapse-ex"  aria-controls="collapse-ex">
+        how much time needed
+      </button>
+    </h2>
+    <div id="collapse-ex" class="accordion-collapse collapse"  data-bs-parent="#accordion-1">
+      <div class="accordion-body">
+        <strong>3 months</strong> It is all you have <br>
+        it's not enough but you can't get more so hurry
+      </div>
+    </div>
+  </div>
+
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        why
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordion-1">
+      <div class="accordion-body">
+        <strong>because they need money <br>
+          your mother is old and tired she need to rest <br>
+          or she will die
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        how to get money
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordion-1">
+      <div class="accordion-body">
+        <strong>This is the three way i can thik of</strong> <br> 1- a good jop <br> 2-trade <br> 3-travel
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+</section>
+
+<section id="instructor" class="p-1 bg-primary">
+  <div class="container">
+    <h2 class="text-center text-white ">some random imgs</h2>
+    <p class="lead text-center text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+        Temporibus fugiat officiis a nesciunt qui ipsum, ducimus eius debitis consequuntur! </p>
+
+        <div class="row g-4 " id="instructor-row">
+
+          <div class="col-md-6 col-lg-3  ">
+
+            <div class="card bg-light " style="width: 16rem;">
+
+              <div class="card-body text-center">
+                <!--rounded-circle roune the img round rount the card it self-->
+                <div class="card-body">
+                <img src="2 .jpg" class="card-img-top img-fluid rounded-circle mb-3  " style="height:10rem;">
+                <h3 class="card-title mb-3">prinsess</h3>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing<br>
+                    elit. Culpa expedita distinctio, mollitia quam est magnam </p>
+                    <a href="#"  ><i class="bi bi-twitter text-dark mx-1" ></i></a>
+                    <a href="#"  ><i class="bi bi-instagram text-dark mx-1" ></i></a>
+                    <a href="#"><i class="bi bi-facebook text-dark mx-1" ></i></a>
+                    <a href="#"  ><i class="bi bi-linkedin text-dark mx-1" ></i></a>
+                  </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light" style="width: 16rem;">
+              <div class="card-body text-center">
+                <!--rounded-circle roune the img round rount the card it self-->
+                <div class="card-body">
+                <img src="1.jpeg" class="img-fluid rounded-circle mb-3 card-img-top " style="height:10rem;">
+                <h3 class="card-title mb-3">prinsess</h3>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing<br>
+                    elit. Culpa expedita distinctio, mollitia quam est magnam </p>
+                    <a href="#"><i class="bi bi-twitter text-dark mx-1" ></i></a>
+                    <a href="#"  ><i class="bi bi-instagram text-dark mx-1" ></i></a>
+                    <a href="#"  ><i class="bi bi-facebook text-dark mx-1" ></i></a>
+                    <a href="#" ><i class="bi bi-linkedin text-dark mx-1" ></i></a>
+                  </div>
+              </div>
+            </div>
+          </div>
+
+              <div class="col-md-6 col-lg-3">
+            <div class="card bg-light" style="width: 16rem;">
+              <div class="card-body text-center">
+                <!--rounded-circle roune the img round rount the card it self-->
+                <div class="card-body">
+                <img src="3.jpg" class="img-fluid rounded-circle mb-3 card-img-top " style="height:10rem;">
+                <h3 class="card-title mb-3">prinsess</h3>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing<br>
+                    elit. Culpa expedita distinctio, mollitia quam est magnam </p>
+                    <a href="#"><i class="bi bi-twitter text-dark mx-1" ></i></a>
+                    <a href="#"><i class="bi bi-instagram text-dark mx-1" ></i></a>
+                    <a href="#"><i class="bi bi-facebook text-dark mx-1" ></i></a>
+                    <a href="#"  ><i class="bi bi-linkedin text-dark mx-1" ></i></a>
+                  </div>
+              </div>
+            </div>
+          </div>
+
+              <div class="col-md-6 col-lg-3">
+            <div class="card bg-light" style="width: 16rem;">
+              <div class="card-body text-center">
+                <!--rounded-circle roune the img round rount the card it self-->
+                <div class="card-body">
+                <img src="1601088.jpg" class="img-fluid rounded-circle mb-3 card-img-top " style="height:10rem;">
+                <h3 class="card-title mb-3">prinsess</h3>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing<br>
+                    elit. Culpa expedita distinctio, mollitia quam est magnam </p>
+                    <a href="#" ><i class="bi bi-twitter text-dark mx-1" ></i></a>
+                    <a href="#" ><i class="bi bi-instagram text-dark mx-1" ></i></a>
+                    <a href="#"><i class="bi bi-facebook text-dark mx-1" ></i></a>
+                    <a href="#"  ><i class="bi bi-linkedin text-dark mx-1" ></i></a>
+                  </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+  </div>
+</section>
+
+
+<!--
+    list-group  list-group-flush => to organize the list put in <Ul>
+
+    list-group-item  => to make all the lines aligned and put a light line seprating the items
+
+    fw-bold font waight bold
+
+
+-->
+<section class="p-5">
+  <div class="container">
+
+    <div class="row g-4">
+
+      <div class="col-md g-5 me-5">
+
+        <h2 class="text-center mb-4">fuck this shit </h2>
+
+        <ul class="list-group list-group-flush lead">
+          <li class="list-group-item"><span class="fw-bold">the 100 plane: </span>5 steps</li>
+          <li class="list-group-item"><span class="fw-bold">first: </span>repeat the first stip fuuuuck</li>
+          <li class="list-group-item"><span class="fw-bold">second: </span>twitter bootstrap list</li>
+          <li class="list-group-item"><span class="fw-bold">third: </span>full stack laravel projects</li>
+          <li class="list-group-item"><span class="fw-bold">forth: </span>apply</li>
+        </ul>
+      </div>
+
+
+      <div class="col-md g-4 ms-5">
+        <div class="mb-2"><img class="map-img" src="yEshb.gif"  ></div>
+    
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<footer class="p-5 bg-dark text-white text-center position-relative">
+  <div class="container">
+    <p class="lead fw-bold">copy right <i class="bi-award-fill"></i>  front end bootstrap </p>
+    <a href="#" class="position-absolute bottom-0 end-0 p-5 top" ><i class="bi-arrow-up-circle h1 top" ></i></a>
+  </div>
+</footer>
+<!--model bop up form to sign in-->
+<div class="modal fade" id="enroll" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p class="lead">fill the form</p>
+        <form action="#">
+          <div class="mb-3">
+            <label for="first" class="col-form-label">
+              name:
+              </label>
+              <!--add form-control to style the input field-->
+            <input type="text" id="first" class="form-control">
+          </div>
+          <div class="mb-3">
+            <label for="second" class="col-form-label">
+              email:
+              </label>
+              <!--add form-control to style the input field-->
+            <input type="text" id="second" class="form-control">
+          </div>
+          
+          <div class="mb-3">
+            <label for="third" class="col-form-label">
+              password:
+              </label>
+              <!--add form-control to style the input field-->
+            <input type="text" id="third" class="form-control">
+          </div>          
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"> 
+    </script>
+    <script>
+            ScrollReveal().reveal(".first-img", {
+        delay: 200,
+        distance: "50px",
+        duration: 1000,
+        easing: "ease-in-out",
+        origin: "top",
+        reset: true,
+      });
+    </script>
+
+</body>
+
+</html>
+</html>

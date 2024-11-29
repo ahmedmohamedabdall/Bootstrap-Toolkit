@@ -1,0 +1,25 @@
+body::before{
+    height:60px;
+    display: block;
+    content: '';
+}
+.map-img{
+    width: 80%;
+    height: 80%;
+}
+
+.s-input{
+    width:50%;
+}
+@media(max-width:768px){
+.s-input{
+    margin-left: 30px;
+    width:80%;
+    
+}
+#instructor-row{
+    margin-left: 45px;
+}
+
+    
+}
